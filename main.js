@@ -31,3 +31,24 @@ document.getElementById("btn-tim-so").onclick = function () {
     }
     document.getElementById("ketquabai3").innerHTML = min;
   };
+  /*Bai4*/
+  document.getElementById("btn-so-duong").onclick = function () {
+    var soDuongBeNhat = Math.min.apply(
+      null,
+      arrNum.filter(function (n) {
+        return n > 0;
+      })
+    );
+    document.getElementById("ketquabai4").innerHTML = soDuongBeNhat;
+  };
+  /*Bai5*/
+  document.getElementById("btn-so-chan").onclick = function () {
+    var lastNum = -1;
+    for (var i = 0; i < arrNum.length; i++) {
+      if (arrNum[i] % 2 === 0) {
+        lastNum = arrNum[i];
+        // break;
+      }
+    }
+    document.getElementById("ketquabai5").innerHTML = lastNum;
+  };

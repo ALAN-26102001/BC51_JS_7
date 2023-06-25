@@ -11,3 +11,23 @@ document.getElementById("btn-tinh-tong").onclick = function () {
   }
   document.getElementById("ketquabai1").innerHTML = outPut;
 };
+/*Bai2*/
+document.getElementById("btn-dem-so").onclick = function () {
+    var count = 0;
+    for (var i = 0; i < arrNum.length; i++) {
+      if (arrNum[i] > 0) {
+        count++;
+      }
+    }
+    document.getElementById("ketquabai2").innerHTML = count;
+  };
+/*Bai3*/
+document.getElementById("btn-tim-so").onclick = function () {
+    var min = arrNum[0];
+    for (var i = 0; i < arrNum.length; i++) {
+      if (arrNum[i] < min) {
+        min = arrNum[i];
+      }
+    }
+    document.getElementById("ketquabai3").innerHTML = min;
+  };
